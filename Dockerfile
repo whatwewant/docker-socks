@@ -1,5 +1,5 @@
 # 拉取镜像
-FROM ubuntu:15.04
+FROM ubuntu:14.04
 
 # 维护者信息
 MAINTAINER Cole Smith <tobewhatwewant@gmail.com>

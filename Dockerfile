@@ -28,14 +28,14 @@ RUN apt-get -qqy update
 
 # install shadowsocks
 COPY install_shadowsocks_libev.sh /tmp/install_shadowsocks_libev.sh
-CMD ["/tmp/install_shadowsocks_libev.sh"]
+RUN /bin/bash /tmp/install_shadowsocks_libev.sh
 COPY shadowsocks.json /etc/shadowsocks/shadowsocks.json
 COPY shadowsocks_1.json /etc/shadowsocks/shadowsocks_1.json
 COPY shadowsocks_2.json /etc/shadowsocks/shadowsocks_2.json
 COPY shadowsocks_3.json /etc/shadowsocks/shadowsocks_3.json
 COPY shadowsocks_4.json /etc/shadowsocks/shadowsocks_4.json
 COPY shadowsocks_5.json /etc/shadowsocks/shadowsocks_5.json
-CMD ["rm -rf /tmp/install_shadowsocks_libev.sh"]
+RUN rm -rf /tmp/install_shadowsocks_libev.sh
 
 # 安装supervisor
 RUN apt-get install -qqy supervisor

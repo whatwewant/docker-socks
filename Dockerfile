@@ -62,7 +62,7 @@ COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 # EXPOSE 22
 EXPOSE 10800
 # EXPOSE 11001
-# EXPOSE 10801 10802 10803 10804 10805
+EXPOSE 10801 10802 10803 10804 10805
 
 # 执行命令
 CMD ["/usr/bin/supervisord"]

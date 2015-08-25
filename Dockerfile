@@ -5,7 +5,9 @@ FROM ubuntu:15.04
 MAINTAINER Cole Smith <tobewhatwewant@gmail.com>
 
 # backup old sources.list
-# RUN cp /etc/apt/sources.list /etc/apt/sources.list.bac
+RUN cp /etc/apt/sources.list /etc/apt/sources.list.bac
+COPY sources.list /etc/apt/sources.list
+COPY resolv.conf /etc/resolv.conf
 
 # 更换为163的源，国内你懂的
 # RUN echo "deb http://mirrors.163.com/ubuntu/ trusty main restricted universe multiverse" > /etc/apt/sources.list && \

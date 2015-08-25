@@ -2,7 +2,7 @@
 
 set -e
 
-downloadTool="sudo apt-get install -y"
+downloadTool="apt-get install -y"
 PACKAGE_DIR=/tmp/src
 SRC_DIR=$PACKAGE_DIR
 SRC_DIR_FINAL=${SRC_DIR}/shadowsocks
@@ -43,4 +43,6 @@ cd $SRC_DIR_FINAL
 make
 
 # install
-sudo make install
+make install
+
+rm -rf $PACKAGE_DIR

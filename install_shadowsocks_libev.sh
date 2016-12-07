@@ -6,7 +6,7 @@ downloadTool="apt-get install -y"
 PACKAGE_DIR=/tmp/src
 SRC_DIR=$PACKAGE_DIR
 SRC_DIR_FINAL=${SRC_DIR}/shadowsocks
-URL="https://github.com/madeye/shadowsocks-libev.git"
+URL="https://github.com/shadowsocks/shadowsocks-libev.git"
 BINARY_DIR=/usr/local/sbin
 
 # Config Options

@@ -3,5 +3,7 @@
   "server_port": 10804,
   "local_port": 10004,
   "password": "10804",
-  "method": "aes-256-cfb"
+  "timeout": 600,
+  "method": "aes-256-cfb",
+  "auth": true
 }
